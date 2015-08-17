@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 
   # Required for {{token}} substitutions in Cucumber API scenarios
   spec.add_dependency 'liquid'
-  spec.add_dependency 'rspec', '~> 2.12'
+  spec.add_dependency 'rspec', '>= 2.12'
   spec.add_dependency 'ci_reporter'
   spec.add_dependency 'ci_reporter_cucumber'
   spec.add_dependency 'ci_reporter_rspec'
@@ -35,4 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'factory_girl'
   spec.add_dependency 'cucumber'
   spec.add_dependency 'parallel_tests'
+
+  spec.add_development_dependency 'rspec', '~> 2.99.0'
 end
